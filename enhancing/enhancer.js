@@ -10,7 +10,7 @@ function success(item) {
   if(enhancement < 20) {
     item.enhancement += 1;
   }
-  return { ...item };
+  return { ...item};
 }
 
 function fail(item) {
