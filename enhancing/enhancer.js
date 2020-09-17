@@ -19,7 +19,7 @@ function fail(item) {
   } else if (item.enhancement === 15 || item.enhancement === 16) {
     item.durability -= 10;
   } else if (item.enhancement > 16) {
-    item.enhancement -= 1 ;
+    item.enhancement -= 1 , item.durability -= 10;
   }
   return { ...item };
 }

@@ -49,10 +49,10 @@ describe("repair", () => {
         durability: 35,
       };
       const expected = 17;
-     // const expectedd = 25
+      const expectedd = 25
       const actual = enhancer.fail(item);
       expect(actual.enhancement).toEqual(expected);
-    //  expect(actual.durability).toEqual(expectedd)
+      expect(actual.durability).toEqual(expectedd)
     });
 
     it("will decrease by 10 if enhancement is greater than 15", () => {
